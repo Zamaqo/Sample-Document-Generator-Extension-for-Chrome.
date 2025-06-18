@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Document Generator</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .document-type {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .document-type:hover {
+      background-color: #f0f0f0;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Generate Sample Document</h1>
+  <form id="serialForm" style="margin-bottom: 15px;">
+    <label for="serialLength">Serial number length:</label>
+    <input type="number" id="serialLength" name="serialLength" min="6" max="32" value="18" style="width: 50px; margin-left: 5px;">
+    <br>
+    <label for="serialInFilename">
+      <input type="checkbox" id="serialInFilename" name="serialInFilename" checked>
+      Include serial number in filename
+    </label>
+    <br>
+  </form>
+  <div id="documentTypes">
+    <div class="document-type" data-type="id">ID Card</div>
+    <div class="document-type" data-type="passport">Passport</div>
+    <div class="document-type" data-type="degree">College Degree</div>
+    <div class="document-type" data-type="randomdoc">Random Document</div>
+    <div class="document-type" data-type="largefile">Large File</div>
+  </div>
+  <div id="previewArea" style="display:none; text-align:center; margin-top:15px;">
+    <img id="previewImg" src="" alt="Preview" style="max-width:100%; border:1px solid #ccc; margin-bottom:10px;" />
+    <div>
+      <button id="copyBtn" type="button">Copy to Clipboard</button>
+      <button id="downloadBtn" type="button">Download</button>
+      <button id="downloadPdfBtn" type="button">Download PDF</button>
+      <button id="downloadLargeFileBtn" type="button" style="display:none;">Download Large File</button>
+    </div>
+  </div>
+  <div id="docTextFields" style="margin-top:10px; text-align:left; font-family:monospace; font-size:15px;"></div>
+  <script src="libs/jspdf.umd.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html> 

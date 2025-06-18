@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Sample Document Generator",
+  "version": "1.0",
+  "description": "Generate sample document images with embedded dates and company logo",
+  "permissions": [
+    "downloads",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16x16.jpg",
+      "48": "icons/48x48.jpg",
+      "128": "icons/128x128.jpg"
+    }
+  },
+  "icons": {
+    "16": "icons/16x16.jpg",
+    "48": "icons/48x48.jpg",
+    "128": "icons/128x128.jpg"
+  }
+} 
