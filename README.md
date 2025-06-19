@@ -1,17 +1,15 @@
 # Sample Document Generator Chrome Extension
 
 This Chrome extension helps generate sample document images for testing purposes. It can create sample images of:
-- ID Cards
-- Passports
-- Wine Bottles
-- College Degrees
-- Dive Logs
+- Dummy sample of ID Cards
+- Dummy sample of Passports
+- Dummy sample of College Degrees
+
 
 Each generated image includes:
 - Current date
 - Document type
 - Sample information
-- Clean, professional layout
 
 ## Installation
 
