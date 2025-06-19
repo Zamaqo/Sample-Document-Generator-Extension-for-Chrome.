@@ -1,3 +1,4 @@
+# V 1.0.0
 # Sample Document Generator Chrome Extension
 
 This Chrome extension helps generate sample document images for testing purposes. It can create sample images of:
